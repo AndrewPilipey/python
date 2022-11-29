@@ -4,7 +4,6 @@ from collections import Counter
 x = Counter("ABC")
 y = Counter("DEF")
 z = Counter("GHI")
-print(x, y, z)
 
 table = PrettyTable()
 table.field_names = ["Letters 1", "Letters 2", "Letters 3"]
