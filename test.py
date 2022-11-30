@@ -1,4 +1,7 @@
-nums = [9, 8, 7, 6, 5]
-nums.append(4)
-nums.insert(2, 11)
-print(nums, len(nums))
+def descending_order(num):
+    users_number = input (str("Input a number"))
+    num = users_number
+    print(sorted(num, reverse=True))
+
+
+descending_order(1)
