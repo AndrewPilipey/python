@@ -1,12 +1,46 @@
-print("Hello, \n\"world!\"")
-print(2 + 2)
+a = 123
+b = 1.23
+c = "one-two-three"
 
-test = 10
+print(a, "-", b, "-", c)
+print("{} - {} - {}".format(a, b, c))
+print(f"{a} - {b} - {c}")
+print("{2} - {0} - {1}".format(a, b, c))
 
-print("I'm " + str(test) + " years old")
-name = input("What is your name? : ")
+list = [1, 2, 3, 4, 5, "six", "seven", "eight", 9.0, 10.0, True, False] #bad_practice
+print(list) #just_example
+print(2 in list)
 
-a = input("Enter a number one, " + name + " : ")
-b = input("Enter a number two, " + name + " : ")
+def another_func():
+    """Document"""
+    d = "local_var"
+    e = input("Enter a number: ")
+    print(d, e)
+    print(another_func.__doc__)
 
-print((int(a) + int(b)) * 3)
+another_func()
+
+first_var = 48384938493
+second_var = 555.5
+third_var = round(first_var * second_var, 7)
+print(third_var)
+
+t = 5 > 4 > 3 > 2
+print(t)
+g = 10 > 5 or 5 > 1
+print(g)
+
+x = 200
+y = 100
+if x > y:
+    print(x)
+else:
+    print(y)
+
+for i in "qwerty":
+    print(i)
+
+help(y.bit_count)
+
+z = "abcdefg"
+print(z[2:5])
